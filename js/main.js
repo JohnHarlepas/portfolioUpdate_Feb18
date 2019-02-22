@@ -1712,7 +1712,7 @@ $(document).ready(function () {
                 data: $("#contact-form").serialize(),
                 success: function (result) {
                     // Un-comment below code to redirect user to thank you page.
-                    //window.location.href="thank-you.html";
+                    window.location.href="thank-you.html";
 
                     $('input[type=text],textarea').each(function () {
                         $(this).val('');
@@ -2069,9 +2069,11 @@ $(document).ready(function () {
         var instaFeedStyle1 = new Instafeed({
             target: 'instaFeed-style1',
             get: 'user',
-            userId: 5640046896,
-            limit: '8',
-            accessToken: '5640046896.1677ed0.f7cd85767e124a9f9f8d698cb33252a0',
+             //this user id is taken from my person istagram account
+            userId: 11313234822,
+            limit: '6',
+            //this is access token taken from my account
+            accessToken: '11313234822.146cdfe.d3caa28bb7bf4e799782898fb9a80a47',
             resolution: "low_resolution",
             error: {
                 template: '<div class="col-md-12 col-sm-12 col-xs-12"><span class=text-center>No Images Found</span></div>'
@@ -2085,9 +2087,11 @@ $(document).ready(function () {
         var instaFeedAside = new Instafeed({
             target: 'instaFeed-aside',
             get: 'user',
-            userId: 5640046896,
-            limit: '6',
-            accessToken: '5640046896.1677ed0.f7cd85767e124a9f9f8d698cb33252a0',
+             //this user id is taken from my person istagram account
+             userId: 11313234822,
+             limit: '6',
+             //this is access token taken from my account
+             accessToken: '11313234822.146cdfe.d3caa28bb7bf4e799782898fb9a80a47',
             resolution: "low_resolution",
             after: function () {
                 equalizeHeight();
@@ -2104,9 +2108,11 @@ $(document).ready(function () {
         var instaFeedFooter = new Instafeed({
             target: 'instaFeed-footer',
             get: 'user',
-            userId: 5640046896,
+            //this user id is taken from my person istagram account
+            userId: 11313234822,
             limit: '6',
-            accessToken: '5640046896.1677ed0.f7cd85767e124a9f9f8d698cb33252a0',
+            //this is access token taken from my account
+            accessToken: '11313234822.146cdfe.d3caa28bb7bf4e799782898fb9a80a47',
             resolution: "low_resolution",
             after: function () {
                 equalizeHeight();
